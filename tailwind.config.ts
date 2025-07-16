@@ -13,7 +13,37 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        arabic: ["Amiri", "Noto Sans Arabic", "serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
+      },
       colors: {
+        islamic: {
+          green: {
+            50: "#f0f9f4",
+            100: "#dcf2e3",
+            200: "#bce5cb",
+            300: "#8dd2a8",
+            400: "#5ab77f",
+            500: "#369b5f",
+            600: "#2a7c4c",
+            700: "#22633f",
+            800: "#1d4f34",
+            900: "#19422c",
+          },
+          gold: {
+            50: "#fefbf0",
+            100: "#fdf6db",
+            200: "#faecb7",
+            300: "#f6dc88",
+            400: "#f0c547",
+            500: "#e8a626",
+            600: "#d4891b",
+            700: "#b06b18",
+            800: "#8f551a",
+            900: "#764619",
+          },
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
