@@ -129,18 +129,25 @@ export default function Index() {
                     </div>
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2 font-arabic">
-                    {book.title}
+                    {book.arabicTitle}
                   </h3>
                   <p className="text-gray-600 mb-4 font-arabic">
                     {book.author}
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500 font-arabic">
-                      {book.chapters} فصل
+                      {book.pages} صفحة
                     </span>
-                    <Button variant="ghost" size="sm" className="font-arabic">
-                      اقرأ الآن
-                      <ArrowRight className="w-4 h-4 mr-2" />
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="font-arabic"
+                      asChild
+                    >
+                      <Link to={`/books/${book.id}`}>
+                        اقرأ الآن
+                        <ArrowRight className="w-4 h-4 mr-2" />
+                      </Link>
                     </Button>
                   </div>
                 </CardContent>
