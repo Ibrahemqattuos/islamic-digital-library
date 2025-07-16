@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { GREAT_IMAMS, CLASSICAL_BOOKS, MADHABS } from "@/data/library";
+import ScholarTree from "@/components/ScholarTree";
 import { useState } from "react";
 
 export default function ScholarsNew() {
@@ -249,7 +250,7 @@ export default function ScholarsNew() {
         <Card>
           <CardContent className="p-6">
             <h3 className="text-lg font-bold mb-4 font-arabic">
-              تطور المذهب عبر التاريخ
+              تطور المذهب عبر ا��تاريخ
             </h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
@@ -374,7 +375,7 @@ export default function ScholarsNew() {
                 الشافعي
               </TabsTrigger>
               <TabsTrigger value="hanbali" className="font-arabic">
-                الحنبلي
+                الح��بلي
               </TabsTrigger>
             </TabsList>
 
