@@ -73,15 +73,17 @@ export default function Navigation() {
 
           {/* Search */}
           <div className="hidden md:flex items-center space-x-4 rtl:space-x-reverse">
-            <div className="relative">
+            <form onSubmit={handleSearch} className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
               <Input
                 type="search"
                 placeholder="البحث في المكتبة..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10 w-64 font-arabic"
                 dir="rtl"
               />
-            </div>
+            </form>
           </div>
 
           {/* Mobile menu button */}
