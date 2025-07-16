@@ -22,8 +22,12 @@ export default function Index() {
   const featuredScholars = GREAT_IMAMS.slice(0, 3);
 
   const stats = [
-    { label: "الكتب", value: "12,457", icon: BookOpen },
-    { label: "العلماء", value: "1,234", icon: Users },
+    {
+      label: "الكتب",
+      value: CLASSICAL_BOOKS.length.toString(),
+      icon: BookOpen,
+    },
+    { label: "العلماء", value: GREAT_IMAMS.length.toString(), icon: Users },
     { label: "المسائل الفقهية", value: "8,901", icon: MessageSquare },
     { label: "الفعاليات", value: "156", icon: Calendar },
   ];
