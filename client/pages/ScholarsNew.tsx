@@ -35,7 +35,7 @@ export default function ScholarsNew() {
 
   const specializations = [
     "جميع التخصصات",
-    "الف��ه",
+    "الفقه",
     "الحديث",
     "التفسير",
     "العقيدة",
@@ -309,7 +309,7 @@ export default function ScholarsNew() {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <Input
                 type="search"
-                placeholder="البحث عن ال��لماء بالاسم أو التخصص..."
+                placeholder="البحث عن العلماء بالاسم أو التخصص..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10 h-12 font-arabic text-right"
