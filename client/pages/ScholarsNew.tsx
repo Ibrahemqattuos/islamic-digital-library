@@ -41,7 +41,7 @@ export default function ScholarsNew() {
     "العقيدة",
     "الأصول",
     "التاريخ",
-    "اللغة العربية",
+    "ال��غة العربية",
   ];
 
   const ScholarCard = ({ scholar, isFounder = false }: any) => {
@@ -276,7 +276,7 @@ export default function ScholarsNew() {
                 <div>
                   <div className="font-semibold font-arabic">التطوير</div>
                   <div className="text-gray-600 font-arabic text-sm">
-                    تطوير المذهب وإثراؤه بالعلماء اللاحقين
+                    تطوير المذهب وإثراؤه بالع��ماء اللاحقين
                   </div>
                 </div>
               </div>
@@ -346,7 +346,7 @@ export default function ScholarsNew() {
               الأئمة الأربعة المجتهدون
             </h2>
             <p className="text-lg text-gray-600 font-arabic">
-              مؤسسو المذاهب الفقهية الأربعة الذين أثروا في الفقه الإسلامي
+              مؤسسو المذاهب الفقهية الأ��بعة الذين أثروا في الفقه الإسلامي
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -473,6 +473,10 @@ export default function ScholarsNew() {
                   </CardContent>
                 </Card>
               </div>
+            </TabsContent>
+
+            <TabsContent value="tree">
+              <ScholarTree />
             </TabsContent>
 
             <TabsContent value="hanafi">
