@@ -17,53 +17,9 @@ import { Link } from "react-router-dom";
 import { CLASSICAL_BOOKS, GREAT_IMAMS } from "@/data/library";
 
 export default function Index() {
-  const featuredBooks = [
-    {
-      id: 1,
-      title: "صحيح البخاري",
-      author: "الإمام البخاري",
-      category: "الحديث الشريف",
-      rating: 4.9,
-      chapters: 97,
-    },
-    {
-      id: 2,
-      title: "تفسير القرآن العظيم",
-      author: "ابن كثير",
-      category: "التفسير",
-      rating: 4.8,
-      chapters: 114,
-    },
-    {
-      id: 3,
-      title: "الموطأ",
-      author: "الإمام مالك",
-      category: "الحديث الشريف",
-      rating: 4.7,
-      chapters: 61,
-    },
-  ];
-
-  const recentScholars = [
-    {
-      id: 1,
-      name: "الشيخ ابن باز",
-      specialization: "الفقه والحديث",
-      works: 45,
-    },
-    {
-      id: 2,
-      name: "الشيخ ابن عثيمين",
-      specialization: "الفقه والعقيدة",
-      works: 67,
-    },
-    {
-      id: 3,
-      name: "الشيخ الألباني",
-      specialization: "علوم الحديث",
-      works: 89,
-    },
-  ];
+  // Use real data from our library
+  const featuredBooks = CLASSICAL_BOOKS.slice(0, 3);
+  const featuredScholars = GREAT_IMAMS.slice(0, 3);
 
   const stats = [
     { label: "الكتب", value: "12,457", icon: BookOpen },
@@ -356,7 +312,7 @@ export default function Index() {
                 المكتبة الرقمية
               </h3>
               <p className="text-islamic-green-200 font-arabic">
-                منصة شا��لة للتراث الإسلامي والمعرفة الدينية
+                منصة شاملة للتراث الإسلامي والمعرفة الدينية
               </p>
             </div>
             <div>
