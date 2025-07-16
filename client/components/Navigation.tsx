@@ -29,6 +29,8 @@ export default function Navigation() {
     { path: "/", label: "الرئيسية", icon: BookOpen },
     { path: "/books", label: "الكتب", icon: BookOpen },
     { path: "/scholars", label: "العلماء", icon: Users },
+    { path: "/shafi-scholars", label: "علماء الشافعية", icon: Users },
+    { path: "/shafi-books", label: "كتب الشافعية", icon: BookOpen },
     { path: "/fiqh", label: "المسائل الفقهية", icon: MessageSquare },
     { path: "/events", label: "الفعاليات", icon: Calendar },
   ];
