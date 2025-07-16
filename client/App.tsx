@@ -11,6 +11,7 @@ import Books from "./pages/Books";
 import Scholars from "./pages/Scholars";
 import Fiqh from "./pages/Fiqh";
 import Events from "./pages/Events";
+import SearchPage from "./pages/Search";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
