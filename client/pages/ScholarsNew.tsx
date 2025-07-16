@@ -35,7 +35,7 @@ export default function ScholarsNew() {
 
   const specializations = [
     "جميع التخصصات",
-    "الفقه",
+    "الف��ه",
     "الحديث",
     "التفسير",
     "العقيدة",
@@ -250,7 +250,7 @@ export default function ScholarsNew() {
         <Card>
           <CardContent className="p-6">
             <h3 className="text-lg font-bold mb-4 font-arabic">
-              تطور المذهب عبر ا��تاريخ
+              تطور المذهب عبر التاريخ
             </h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
@@ -309,7 +309,7 @@ export default function ScholarsNew() {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <Input
                 type="search"
-                placeholder="البحث عن العلماء بالاسم أو التخصص..."
+                placeholder="البحث عن ال��لماء بالاسم أو التخصص..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10 h-12 font-arabic text-right"
@@ -361,9 +361,12 @@ export default function ScholarsNew() {
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="grid w-full grid-cols-5 mb-8">
+            <TabsList className="grid w-full grid-cols-6 mb-8">
               <TabsTrigger value="overview" className="font-arabic">
                 نظرة عامة
+              </TabsTrigger>
+              <TabsTrigger value="tree" className="font-arabic">
+                شجرة العلماء
               </TabsTrigger>
               <TabsTrigger value="hanafi" className="font-arabic">
                 الحنفي
@@ -375,7 +378,7 @@ export default function ScholarsNew() {
                 الشافعي
               </TabsTrigger>
               <TabsTrigger value="hanbali" className="font-arabic">
-                الح��بلي
+                الحنبلي
               </TabsTrigger>
             </TabsList>
 
