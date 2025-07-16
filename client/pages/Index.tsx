@@ -11,8 +11,10 @@ import {
   TrendingUp,
   Clock,
   ArrowRight,
+  Crown,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { CLASSICAL_BOOKS, GREAT_IMAMS } from "@/data/library";
 
 export default function Index() {
   const featuredBooks = [
@@ -263,7 +265,7 @@ export default function Index() {
                 <div className="flex items-center mb-4">
                   <MessageSquare className="w-6 h-6 text-islamic-green-600 ml-3" />
                   <h3 className="text-lg font-bold text-gray-900 font-arabic">
-                    المسائل الفقهية الحد��ثة
+                    المسائل الفقهية الحديثة
                   </h3>
                 </div>
                 <ul className="space-y-3">
@@ -354,7 +356,7 @@ export default function Index() {
                 المكتبة الرقمية
               </h3>
               <p className="text-islamic-green-200 font-arabic">
-                منصة شاملة للتراث ال��سلامي والمعرفة الدينية
+                منصة شا��لة للتراث الإسلامي والمعرفة الدينية
               </p>
             </div>
             <div>
