@@ -179,24 +179,30 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {recentScholars.map((scholar) => (
+            {featuredScholars.map((scholar) => (
               <Card
                 key={scholar.id}
                 className="hover:shadow-lg transition-shadow cursor-pointer"
               >
                 <CardContent className="p-6 text-center">
-                  <div className="w-20 h-20 bg-islamic-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-20 h-20 bg-islamic-green-100 rounded-full mx-auto mb-4 flex items-center justify-center relative">
                     <Users className="w-10 h-10 text-islamic-green-600" />
+                    <Crown className="w-4 h-4 text-islamic-gold-500 absolute -top-1 -right-1" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2 font-arabic">
-                    {scholar.name}
+                    {scholar.arabicName}
                   </h3>
-                  <p className="text-gray-600 mb-4 font-arabic">
-                    {scholar.specialization}
+                  <p className="text-gray-600 mb-2 font-arabic">
+                    {scholar.title}
+                  </p>
+                  <p className="text-sm text-gray-500 mb-4 font-arabic">
+                    {scholar.period}
                   </p>
                   <div className="flex items-center justify-center text-sm text-gray-500">
                     <TrendingUp className="w-4 h-4 ml-1" />
-                    <span className="font-arabic">{scholar.works} مؤلف</span>
+                    <span className="font-arabic">
+                      {scholar.majorWorks.length} مؤلف
+                    </span>
                   </div>
                 </CardContent>
               </Card>
